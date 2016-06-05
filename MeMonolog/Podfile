@@ -1,0 +1,6 @@
+target ‘MeMonolog’
+
+use_frameworks!
+
+pod 'CameraManager', '~> 2.2'
+pod 'Player', '~> 0.1'

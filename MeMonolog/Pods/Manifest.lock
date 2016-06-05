@@ -1,0 +1,15 @@
+PODS:
+  - CameraManager (2.2.3)
+  - Player (0.1.1)
+
+DEPENDENCIES:
+  - CameraManager (~> 2.2)
+  - Player (~> 0.1)
+
+SPEC CHECKSUMS:
+  CameraManager: aca6ae93237ca5f10d0f234d4cadda28caee22ca
+  Player: 575e1e8cde1e6b7cd62d6d6bc06e492d02e62b9e
+
+PODFILE CHECKSUM: 599c6ef9d60d4c058152c77abd38062d4d84f04e
+
+COCOAPODS: 1.0.0
