@@ -23,7 +23,7 @@ class MMVideoViewController: UIViewController {
         didSet{print(recorder)}
     }
     
-    var myVideoURL = NSURL()
+    var myVideoURL = NSURL?()
     
     let cameraManager = CameraManager()
     let fileManager = NSFileManager.defaultManager()
@@ -56,6 +56,9 @@ class MMVideoViewController: UIViewController {
     }
 
     @IBAction func record(sender: UIButton) {
+        
+        if !cameraManager.cameraIsReady { return }
+        
         if recorder == .Stopped {
             recorder = .Recording
             cameraView.addSubview(recordingIcon)
@@ -91,6 +94,7 @@ class MMVideoViewController: UIViewController {
         
         if segue.identifier == "recordAudioID" {
             let nextVC = segue.destinationViewController as! MMRecordAudioViewController
+            
             nextVC.videoURL = self.myVideoURL
         }
         
