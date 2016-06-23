@@ -40,6 +40,7 @@ class MMVideoViewController: UIViewController {
        
         cameraManager.cameraOutputMode = .VideoOnly
         cameraManager.cameraDevice = .Front
+        cameraManager.shouldRespondToOrientationChanges = true
                 cameraManager.showErrorBlock = { [weak self] (erTitle: String, erMessage: String) -> Void in
             
             let alertController = UIAlertController(title: erTitle, message: erMessage, preferredStyle: .Alert)
