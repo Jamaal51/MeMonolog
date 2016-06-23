@@ -140,14 +140,47 @@
                                     <action selector="recordAudio:" destination="909-A3-dWn" eventType="touchUpInside" id="OAR-F5-hCl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifQ-87-SW6">
+                                <rect key="frame" x="164" y="532" width="85" height="30"/>
+                                <state key="normal" title="Stop Record">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButton:" destination="909-A3-dWn" eventType="touchUpInside" id="pQi-ht-gj3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwj-4O-Sdc">
+                                <rect key="frame" x="192" y="570" width="30" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.1529411765" green="0.77647058820000003" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="909-A3-dWn" eventType="touchUpInside" id="ffX-FB-tBp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve9-IW-6ns">
+                                <rect key="frame" x="185" y="625" width="44" height="30"/>
+                                <state key="normal" title="Merge">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mergeFiles:" destination="909-A3-dWn" eventType="touchUpInside" id="aFo-Og-HNz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="hIC-NP-cdv" secondAttribute="trailing" id="CIL-2W-dBy"/>
+                            <constraint firstItem="ve9-IW-6ns" firstAttribute="centerX" secondItem="Xwj-4O-Sdc" secondAttribute="centerX" id="D8Z-Yk-Gdb"/>
                             <constraint firstItem="hIC-NP-cdv" firstAttribute="top" secondItem="caj-yj-lgz" secondAttribute="bottom" constant="50" id="G58-tQ-sdP"/>
                             <constraint firstItem="hIC-NP-cdv" firstAttribute="leading" secondItem="KpI-pH-vj7" secondAttribute="leading" id="JjI-yv-O9W"/>
                             <constraint firstItem="hpN-7Y-1ak" firstAttribute="top" secondItem="hIC-NP-cdv" secondAttribute="bottom" constant="30" id="Lel-aa-vFY"/>
+                            <constraint firstItem="Xwj-4O-Sdc" firstAttribute="top" secondItem="ifQ-87-SW6" secondAttribute="bottom" constant="8" id="ODc-Gz-dt8"/>
                             <constraint firstItem="hpN-7Y-1ak" firstAttribute="centerX" secondItem="hIC-NP-cdv" secondAttribute="centerX" id="Owa-8W-ZKT"/>
+                            <constraint firstItem="ifQ-87-SW6" firstAttribute="centerX" secondItem="hpN-7Y-1ak" secondAttribute="centerX" id="UJw-Fe-DnZ"/>
+                            <constraint firstItem="ifQ-87-SW6" firstAttribute="top" secondItem="hpN-7Y-1ak" secondAttribute="bottom" constant="8" id="bjD-lF-Fym"/>
+                            <constraint firstItem="Xwj-4O-Sdc" firstAttribute="centerX" secondItem="ifQ-87-SW6" secondAttribute="centerX" id="kJj-C1-cTO"/>
+                            <constraint firstItem="ve9-IW-6ns" firstAttribute="top" secondItem="Xwj-4O-Sdc" secondAttribute="bottom" constant="25" id="rnP-oj-z0b"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>

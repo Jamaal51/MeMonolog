@@ -38,7 +38,7 @@ class MMVideoViewController: UIViewController {
     
     private func setUpCamera() {
        
-        cameraManager.cameraOutputMode = .VideoWithMic
+        cameraManager.cameraOutputMode = .VideoOnly
         cameraManager.cameraDevice = .Front
                 cameraManager.showErrorBlock = { [weak self] (erTitle: String, erMessage: String) -> Void in
             
@@ -49,10 +49,8 @@ class MMVideoViewController: UIViewController {
         }
         
         cameraManager.cameraOutputQuality = .High
-        cameraManager.writeFilesToPhoneLibrary = true
+        cameraManager.writeFilesToPhoneLibrary = false
         cameraManager.addPreviewLayerToView(self.cameraView)
-        
-
     }
 
     @IBAction func record(sender: UIButton) {
