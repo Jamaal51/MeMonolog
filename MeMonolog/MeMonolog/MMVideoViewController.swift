@@ -93,7 +93,6 @@ class MMVideoViewController: UIViewController {
         
         if segue.identifier == "recordAudioID" {
             let nextVC = segue.destinationViewController as! MMRecordAudioViewController
-            
             nextVC.videoURL = self.myVideoURL
         }
         

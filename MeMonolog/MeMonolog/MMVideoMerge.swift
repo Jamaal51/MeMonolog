@@ -10,7 +10,7 @@ import Foundation
 import AVFoundation
 import Photos
 
-class VideoMerger {
+class MMVideoMerger {
 
     var audioAsset = AVURLAsset?()
     var videoAsset = AVURLAsset?()
@@ -18,7 +18,7 @@ class VideoMerger {
     
     private let mixComposition = AVMutableComposition()
 
-    func mergeAudioAndVideo(video video:NSURL, audio:NSURL) {
+    internal func mergeAudioAndVideo(video video:NSURL, audio:NSURL) {
         
         audioAsset = AVURLAsset(URL: audio)
         videoAsset = AVURLAsset(URL: video)
