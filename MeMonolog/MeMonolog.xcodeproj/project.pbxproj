@@ -13,6 +13,7 @@
 		781197A71D023E7700221B55 /* MeMonolog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 781197A51D023E7700221B55 /* MeMonolog.xcdatamodeld */; };
 		781197A91D023E7700221B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781197A81D023E7700221B55 /* Assets.xcassets */; };
 		781197AC1D023E7700221B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781197AA1D023E7700221B55 /* LaunchScreen.storyboard */; };
+		789973741D1CDADB0022AE19 /* MMVideoMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789973731D1CDADB0022AE19 /* MMVideoMerge.swift */; };
 		78A098581D0357BC00D918AA /* MMRecordAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A098571D0357BC00D918AA /* MMRecordAudioViewController.swift */; };
 		B7F7EBDD1A1E58CC45107A32 /* Pods_MeMonolog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994F543805B125D4367CB75B /* Pods_MeMonolog.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		781197A81D023E7700221B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		781197AB1D023E7700221B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		781197AD1D023E7700221B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		789973731D1CDADB0022AE19 /* MMVideoMerge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMVideoMerge.swift; sourceTree = "<group>"; };
 		78A098571D0357BC00D918AA /* MMRecordAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMRecordAudioViewController.swift; sourceTree = "<group>"; };
 		994F543805B125D4367CB75B /* Pods_MeMonolog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeMonolog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFBE776D49772D78A62FEE1 /* Pods-MeMonolog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeMonolog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeMonolog/Pods-MeMonolog.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				781197A01D023E7700221B55 /* MMVideoViewController.swift */,
 				78A098571D0357BC00D918AA /* MMRecordAudioViewController.swift */,
+				789973731D1CDADB0022AE19 /* MMVideoMerge.swift */,
 				781197A21D023E7700221B55 /* Main.storyboard */,
 				781197B31D023EAB00221B55 /* Supporting Files */,
 			);
@@ -228,6 +231,7 @@
 				781197A11D023E7700221B55 /* MMVideoViewController.swift in Sources */,
 				7811979F1D023E7700221B55 /* AppDelegate.swift in Sources */,
 				78A098581D0357BC00D918AA /* MMRecordAudioViewController.swift in Sources */,
+				789973741D1CDADB0022AE19 /* MMVideoMerge.swift in Sources */,
 				781197A71D023E7700221B55 /* MeMonolog.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
